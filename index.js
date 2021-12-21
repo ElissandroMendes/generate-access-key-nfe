@@ -32,7 +32,7 @@ const generateContingencyKeyFrom = (key) => {
 const generateOriginalKeyFrom = (key) => {
   const partOne = key.substr(0, 34)
   const partTwo = key.substring(35, key.length - 1)
-  const tempKey = `${partOne}9${partTwo}`
+  const tempKey = `${partOne}1${partTwo}`
 
   const newKey = `${tempKey}${calculateDigit(tempKey)}`
   return newKey
